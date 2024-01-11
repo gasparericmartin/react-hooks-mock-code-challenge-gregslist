@@ -1,8 +1,8 @@
-import React from 'react'
+import React, {useState} from 'react'
 
 function Sort({displayListings, setDisplayListings}) {
     function handleSort() {
-        setDisplayListings(displayListings.sort((a, b) => {
+        const newList = [...displayListings].sort((a, b) => {
             const locationA = a.location.toLowerCase()
             const locationB = b.location.toLowerCase()
 
@@ -13,7 +13,9 @@ function Sort({displayListings, setDisplayListings}) {
                 return 1
             }
             return 0
-        }))
+        })
+
+        setDisplayListings(newList)
     }
     
     return(

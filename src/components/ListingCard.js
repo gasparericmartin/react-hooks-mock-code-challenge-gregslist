@@ -18,6 +18,7 @@ function ListingCard({listing, listingsList, setListingsList}) {
     .then((response) => response.json())
     .then(setListingsList(updatedList))
   }
+
   
   return (
     <li className="card">

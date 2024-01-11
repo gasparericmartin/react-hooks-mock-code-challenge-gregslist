@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React, {useEffect, useState} from "react";
 import ListingCard from "./ListingCard";
 
 function ListingsContainer({listingsList, 
@@ -15,7 +15,6 @@ function ListingsContainer({listingsList,
     setListingsList(listings)
     setDisplayListings(listings)})
   }, [])
-
   
   return (
     <main>

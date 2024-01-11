@@ -1,10 +1,11 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import Header from "./Header";
 import ListingsContainer from "./ListingsContainer";
 
 function App() {
   const [listingsList, setListingsList] = useState([])
   const [displayListings, setDisplayListings] = useState(listingsList)
+
   
   return (
     <div className="app">
