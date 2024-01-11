@@ -10,6 +10,7 @@ function App() {
     <div className="app">
       <Header 
         listingsList={listingsList} 
+        displayListings={displayListings}
         setDisplayListings={setDisplayListings}
       />
       <ListingsContainer 
