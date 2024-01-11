@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from "react";
 import Header from "./Header";
 import ListingsContainer from "./ListingsContainer";
+import AddNewListing from './AddNewListing'
 
 function App() {
   const [listingsList, setListingsList] = useState([])
@@ -18,6 +19,10 @@ function App() {
         listingsList={listingsList} 
         setListingsList={setListingsList}
         displayListings={displayListings}
+        setDisplayListings={setDisplayListings}
+      />
+      <AddNewListing 
+        displayListings={displayListings} 
         setDisplayListings={setDisplayListings}
       />
     </div>
